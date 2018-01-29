@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "Store-Chrome-Tabs",
+  "description": "Store current opened chrome tabs in sequence",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "extension_popup.html"
+  },
+
+  "icons": {
+    "16": "Store.png",
+    "32": "Store.png",
+    "64": "Store.png",
+    "128": "Store.png"
+  },
+
+  "background": {
+    "scripts": ["saveLocally.js"]
+  },
+
+  "permissions": [
+    "tabs"
+  ]
+
+}
